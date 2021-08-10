@@ -1,6 +1,6 @@
 #### 1.简介
 
-一个辅助脚本，利用工具[pandocx](https://github.com/jgm/pandoc/releases/tag/2.14.1)，以单线程的方式将目录下所有docx文件转为markdown格式。
+一个辅助脚本，利用工具[pandoc](https://github.com/jgm/pandoc/releases/tag/2.14.1)，以单线程的方式将目录下所有docx文件转为markdown格式。
 
 pandocx：https://github.com/jgm/pandoc/releases/tag/2.14.1
 
