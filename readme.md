@@ -19,5 +19,5 @@ images_store_path = "D:\\笔记\\images\\"
 
 #### 3.运行结果如下
 
-![](E:\9-Program\GIT\Docx_to_markdown\1.png)
+![](./1.png)
 
