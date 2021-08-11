@@ -29,13 +29,6 @@ def get_file_list(directory):
                 files_path_list.append (file_path_d)
                 files_p_list.append (file_path_m)
 
-    # 遍历文件进行大文件检测
-    for fpl_d in files_path_list:
-        # print(fpl_d)
-        pass
-    for fpl_m in files_p_list:
-        # print(fpl_m)
-        pass
     return files_path_list, files_p_list
 
 
@@ -43,7 +36,7 @@ def convert_md(pandoc_path, f_docx, f_md, images_store_p):
     try:
         image_store_path_create = images_store_p + str (f_docx.split ('\\')[-1]).replace (".docx", "") + str (
             uuid.uuid4 ())
-        cmd = pandoc_path + " \"{}\" -f docx  -t markdown  -o \"{}\"  --extract-media={}".format (f_docx, f_md,
+        cmd = pandoc_path + " \"{}\" -f docx  -t markdown  -o \"{}\"  --extract-media=\"{}\"".format (f_docx, f_md,
                                                                                                   image_store_path_create)
         res = subprocess.Popen (cmd, shell=True, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
         sout, serr = res.communicate ()
